@@ -205,6 +205,7 @@ lazy val spark = (project in file("spark"))
       "org.apache.spark" %% "spark-catalyst" % sparkVersion.value % "provided",
       // For DynamoDBCommitStore
       "com.amazonaws" % "aws-java-sdk" % "1.12.262" % "provided",
+      "org.apache.hadoop" % "hadoop-aws" % hadoopVersion % "provided",
 
       // Test deps
       "org.scalatest" %% "scalatest" % scalaTestVersion % "test",
